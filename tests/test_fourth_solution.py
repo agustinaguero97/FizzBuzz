@@ -5,7 +5,7 @@ from fourth_solution import (
     FizzBuzz,
     return_word_or_empty
 )
-from scenarios import (
+from tests.scenarios import (
     FIZZ,
     BAZZ,
     FIZZBUZZ,
