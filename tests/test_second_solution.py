@@ -1,6 +1,6 @@
 from unittest import TestCase
 from parameterized import parameterized
-from second_solution import FizzBuzz
+from src.second_solution import FizzBuzz
 
 
 class TestOopFizzBuzz(TestCase):

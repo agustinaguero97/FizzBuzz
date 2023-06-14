@@ -1,6 +1,6 @@
 from unittest import TestCase
 from parameterized import parameterized
-from first_solution import isMultipleOf, initialLoop
+from src.first_solution import isMultipleOf, initialLoop
 
 
 class TestFirstSolution(TestCase):

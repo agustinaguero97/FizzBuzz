@@ -1,7 +1,7 @@
 from unittest import TestCase
 from unittest.mock import patch
 from parameterized import parameterized
-from fourth_solution import (
+from src.fourth_solution import (
     FizzBuzz,
     return_word_or_empty
 )
