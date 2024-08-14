@@ -14,8 +14,12 @@ class FizzBuzz:
         self.complete_seq = COMPLETE_SEQUENCE
 
     def loop_using_map(self):
+        # result = list(map(
+        #     self.sequence_handler,
+        #     [number for number in range(self.fromNum, self.toNum+1)]
+        # ))
         result = list(map(
-            self.sequence_handler,
+            self.sequenceHandler,
             [number for number in range(self.fromNum, self.toNum+1)]
         ))
         return result
@@ -25,6 +29,14 @@ class FizzBuzz:
         output += ''.join(list(map(
             functools.partial(return_word_or_empty, number), self.complete_seq
         )))
+        if output == '':
+            output = str(number)
+        return output
+
+    def sequenceHandler(self, number: int):
+        output = ''
+        for sequence in self.complete_seq:
+            output += ''.join(return_word_or_empty(number, sequence))
         if output == '':
             output = str(number)
         return output
